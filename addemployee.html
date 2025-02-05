@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Employee</h1>
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="dob">Date of Birth (YYYY-MM-DD):</label>
+        <input type="date" name="dob" id="dob" required><br><br>
+
+        <label for="department">Department:</label>
+        <input type="text" name="department" id="department" required><br><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" name="salary" id="salary" step="0.01" required><br><br>
+
+        <input type="submit" value="Add Employee">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Employee List</a>
+</body>
+</html>
