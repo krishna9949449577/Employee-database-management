@@ -1,0 +1,99 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px; /* Add some spacing between links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block; /* Make labels stack on top of inputs */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Style the delete button to look less like a link */
+button {
+    background-color: #dc3545; /* Red */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px; /* Space it out a bit */
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+/* Style for search results message when no employees are found */
+td[colspan="6"] {  /* Target the table cell with colspan 6 */
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    padding: 10px; /* Add some padding */
+}
