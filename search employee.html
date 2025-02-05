@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Employee</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Search Employee</h1>
+    <form method="POST" action="{{ url_for('search_employee') }}">
+        <input type="text" name="search" placeholder="Enter name or department">
+        <button type="submit">Search</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Employee List</a>
+</body>
+</html>
